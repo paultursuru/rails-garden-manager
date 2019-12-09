@@ -1,4 +1,4 @@
-Garden.destroy_all if Rails.env.development?
+Garden.destroy_all # if Rails.env.development?
 
 garden_names = [
   "French garden",
@@ -23,6 +23,6 @@ garden_names = [
     )
     plant.garden = garden
     plant.save!
-    sleep(2)
+    puts "garden saved with plants"
   end
 end
